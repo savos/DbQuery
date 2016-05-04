@@ -12,14 +12,14 @@
 			"DB_HOST" => "localhost",	// your DB host domain/IP
 			"DB_USER" => "root",		// database username
 			"DB_PASS" => "",			// password
-			"DB_BASE" => "sakila"		// database name
+			"DB_BASE" => "DB1name"		// database name
 		),
 		
-		"YourDB1" => array(				// database name to display
+		"YourDB2" => array(				// database name to display
 			"DB_HOST" => "localhost",	// your DB host domain/IP
 			"DB_USER" => "root",		// database username
 			"DB_PASS" => "",			// password
-			"DB_BASE" => "w3control"	// database name
+			"DB_BASE" => "DB2name"	// database name
 		)
 	);
 	
