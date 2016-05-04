@@ -1,0 +1,195 @@
+
+body {
+    /*height:100%;*/
+    margin: 0;
+    font-family: Verdana, Arial, helvetica, Sans-serif;
+    font-size: 13px;
+}
+
+#header {
+    position: fixed;
+    top:0px;
+    background-color: #55f; 
+    color: white; 
+    padding: 2 2 2 2;
+    width: 100%;
+    height: 18px;
+}
+
+#dbs {
+    float:left;
+    position:relative;
+    width: 200px;
+}
+
+#title {
+    left: 330px;
+    text-align: center;
+}
+
+#container {
+    margin-top: 23px;
+    height: calc(100vh - 42px);
+    background-color: red;
+    overflow: hidden;
+}
+
+#nav { 
+    float:left; 
+    resize: horizontal; 
+    overflow: auto;
+    width: 200px; 
+    rezizable: horizontal;
+}
+    
+#div_tables {
+    margin-top:-12;
+    height: calc(100vh - 251px);
+    background-color: #ddd;
+    overflow-y: auto;
+}
+
+#div_fields {
+    height: 220px;
+    width: 100%;
+    overflow-y: auto;
+    background-color: gray;
+}
+
+#fields {
+    color: white;
+	cursor: pointer;
+}
+
+#tables {
+    list-style-type: none;
+    font-size:12px;
+    overflow-x: hidden;
+    background-color: #ddd;
+	cursor: pointer;
+}
+
+li {
+    margin-left:-35px;
+}
+
+#right_panel {
+    position: relative;
+    width: auto;
+    overflow: hidden;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */ 
+    background-color: green;
+
+}
+    
+#sql {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;         /* For IE and modern versions of Chrome */
+    -moz-box-sizing: border-box;    /* For Firefox                          */
+    -webkit-box-sizing: border-box;
+    top: 0;
+    right: 100;
+    left: 0;
+    padding-right: 55;
+    background-color: cyan;
+    border: 1px solid yellow;
+    background-color: gray;
+}
+
+#query {
+    width: 100%;
+    box-sizing: border-box;         /* For IE and modern versions of Chrome */
+    -moz-box-sizing: border-box;    /* For Firefox                          */
+    -webkit-box-sizing: border-box; /* For Safari*/      
+    height: 100;
+    border: 1px solid black;
+}
+
+#run {
+    position: absolute;
+    top: 25px;
+    right: 2px;
+}
+
+#result {
+     height: calc( 100% - 103px);
+     width: 100%;
+     /*border: 1px solid black;*/ 
+     background-color: white;
+     /*margin-bottom:95px;*/
+     overflow: auto;
+}
+       
+#status {
+    text-align: left; 
+    background-color: #ddd; 
+    color: white; 
+    padding: 2 2 2 2;
+    font-size: 13px;
+    position: fixed;
+    margin-bottom: 0;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+    background-color: #aaa;
+    color: white;
+    text-align: left;
+    width: 100%;
+    font-family: 'Courier New', Lucinda;
+    font-size: 12px;
+    padding: 2 2 2 5;
+    height: 14px;
+}
+
+table {
+    width: 100%;
+    font-size: 12px;
+    margin-top:22px;
+}
+
+th {
+    background-color: #aaa;
+    color: white;
+}
+
+tr {
+    color: black;
+    background-color: #ddd;
+}
+
+tr.header {
+	position:fixed; 
+	margin-top:-22px;
+}
+
+.loader {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('loader.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .loader {
+    display: block;
+}
+
